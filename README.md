@@ -1,75 +1,78 @@
-# Mod Minetest : Armor Toggle
+# Minetest Mod: Armor Toggle
 
-Par Luffy0805
-Version : 1.0.2
-Licence : MIT
+By Luffy0805  
+Version: 1.0.2  
+License: MIT
 
 ---
 ---
 
 ## Installation
 
-1. Placer le dossier du mod dans le répertoire `mods/`
-2. Activer le mod dans le monde souhaité
-3. Le mod `3d_armor` est obligatoire
+1. Place the mod folder into the `mods/` directory  
+2. Enable the mod in your chosen world  
+3. The `3d_armor` mod is required
 
 ---
 
 ## Description
 
-Ce mod permet aux joueurs de **masquer ou afficher leur armure 3D** à tout moment en jeu.
-Idéal pour les serveurs roleplay, les captures d'écran, ou par préférence personnelle.
-L'état de visibilité est **mémorisé entre les connexions**.
+This mod allows players to **hide or show their 3D armor** at any time in-game.  
+Ideal for roleplay servers, screenshots, or personal preference.  
+The visibility state is **remembered between sessions**.
 
-Des **effets visuels et sonores** sont joués à chaque changement d'état.
-
----
-
-## Fonctionnalités
-
-* Masquage/affichage de l'armure via commandes simples
-* Commande courte `/av` pour un accès rapide
-* Particules et sons lors du changement d'état
-* L'état est restauré automatiquement à la connexion
-* Reprise automatique si l'armure ou le skin est modifié
-* Compatible avec `3d_armor` et les mods visuels similaires
+**Visual and sound effects** are triggered each time the state changes.
 
 ---
 
-## Commandes
+## Features
+
+* Hide/show armor using simple chat commands  
+* Short command `/av` for quick toggling  
+* Particles and sounds when switching visibility  
+* The state is automatically restored on login  
+* Auto re-apply if the skin or armor changes  
+* Compatible with `3d_armor` and similar visual mods
+
+---
+
+## Commands
 
 ```bash
 /armor_view <on|off|status>
-```
+/armor_view on → Show the armor
 
-* `/armor_view on` → Afficher l'armure
-* `/armor_view off` → Masquer l'armure
-* `/armor_view` ou `/armor_view status` → Affiche l'état actuel
+/armor_view off → Hide the armor
 
-```bash
+/armor_view or /armor_view status → Show current state
+
+bash
+Copier
+Modifier
 /av
-```
+Quickly toggle between visible/invisible
 
-* Bascule rapidement entre visible/invisible
+Sounds & Particles
+A sound is played: smooth_swish.ogg
 
----
+Particles appear around the player when toggling
 
-## Sons & Particules
+Customizable particle textures: smoke.png (you can use any texture you like)
 
-* Un son est joué : smooth_swish.ogg
-* Des particules apparaissent autour du joueur lors du changement
-* Textures de particules personnalisables : smoke.png (Mais vous pouvez ajouter la texture de votre choix)
-* Personnalisation possible (l.20) :
+Customization available (around line 20):
 
-  * Taille
-  * Intensité lumineuse (glow)
-  * Texture
-  * Vitesse et dispersion
+Size
 
+Glow intensity
 
-## Structure recommandée
+Texture
 
-```
+Speed and spread
+
+Recommended Structure
+csharp
+Copier
+Modifier
 mods/
 └── armor_toggle/
     ├── mod.conf
@@ -77,22 +80,15 @@ mods/
     ├── README-fr.txt
     ├── README.md
     ├── sounds/
-    │   ├── smooth_swish.ogg
+    │   └── smooth_swish.ogg
     └── textures/
         ├── blank.png
         └── smoke.png
-```
+Notes
+All sounds must be in .ogg format, preferably mono (not stereo)
 
----
+Volume can be adjusted via gain in the code
 
-## Remarques
-
-* Tous les sons doivent être au format `.ogg`, de préférence en mono, pas en stéréo
-* Le volume peut être modifié via `gain` dans le code
-* 
----
-
-## Licence
-
-Code : MIT
-Textures/Sons : MIT
+License
+Code: MIT
+Textures/Sounds: MIT

@@ -11,10 +11,7 @@ Licence : MIT
 
 1. Placer le dossier du mod dans le répertoire `mods/`
 2. Activer le mod dans le monde souhaité
-3. Le mod `3d_armor` est recommandé mais pas obligatoire
-4. Placer vos sons dans `armor_toggle/sounds/`
-
-   * Exemple : `armor_toggle/sounds/smooth_swish.ogg`
+3. Le mod `3d_armor` est obligatoire
 
 ---
 

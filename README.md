@@ -40,19 +40,22 @@ The visibility state is **remembered between sessions**.
 
 ```bash
 /armor_view <on|off|status>
-/armor_view on → Show the armor
+---
 
-/armor_view off → Hide the armor
 
-/armor_view or /armor_view status → Show current state
+* `/armor_view on → Show the armor
+* `/armor_view off → Hide the armor
+* `/armor_view or /armor_view status → Show current state
 
-bash
-Copier
-Modifier
+```bash
 /av
-Quickly toggle between visible/invisible
+```
 
-Sounds & Particles
+*Quickly toggle between visible/invisible
+
+```
+
+## Sounds & Particles
 A sound is played: smooth_swish.ogg
 
 Particles appear around the player when toggling
@@ -69,10 +72,9 @@ Texture
 
 Speed and spread
 
-Recommended Structure
-csharp
-Copier
-Modifier
+## Recommended Structure
+
+```
 mods/
 └── armor_toggle/
     ├── mod.conf
@@ -84,10 +86,14 @@ mods/
     └── textures/
         ├── blank.png
         └── smoke.png
+---
+
+---
+
 Notes
 All sounds must be in .ogg format, preferably mono (not stereo)
-
 Volume can be adjusted via gain in the code
+---
 
 License
 Code: MIT

@@ -13,7 +13,7 @@ local function play_effects(player, mode)
 
     pos.y = pos.y + 1  -- Effets légèrement au-dessus du joueur
 
-    local texture = "test.png"
+    local texture = "smoke.png"
     local glow = 10
 
     -- Particules colorées selon mode

@@ -96,3 +96,5 @@ mods/
 
 Code: MIT
 Textures/Sounds: MIT
+
+Thumbnail by SkyBuilder1717 (MIT)

@@ -1,4 +1,4 @@
-# Minetest Mod: Armor Toggle
+# Luanti Mod: Armor Toggle
 
 By Luffy0805
 Version: 1.0.2
